@@ -43,8 +43,8 @@ body {
     100% { opacity: 1}
 }
     
-    #buttonPrev, #buttonNext {
-        font-size: 200%;
+    #buttonPrev, #buttonNext, #buttonSkrytb, #buttonOtkrytb {
+        font-size: 150%;
     }
 
 #mytable tr td.clicked {
@@ -524,9 +524,11 @@ async function myslider(){
         <button id="buttonSkrytb" onclick="skrytb();" value=">">></button>
         <button id="buttonOtkrytb" onclick="otkrytb();" value=""><</button>
         <p><input id="checkboxAutolist" type="checkbox" checked="checked" onclick="autolist();">авто</input></p>
-        <p><INPUT id="checkboxRandomPoryadok" type="checkbox" checked="checked" onclick="checkboxRandomPoryadokClick();">случайная</input></p>
-        <button id="buttonPrev" onclick="funcPrev();" disabled>назад</button>
-        <button id="buttonNext" onclick="funcNext();" disabled>вперед</button>
+        <p><input id="checkboxRandomPoryadok" type="checkbox" checked="checked" onclick="checkboxRandomPoryadokClick();">случайная</input></p>
+        <p>
+            <button id="buttonPrev" onclick="funcPrev();" disabled>назад</button>
+            <button id="buttonNext" onclick="funcNext();" disabled>вперед</button>
+        </p>
         <p>
             <span>Таймер</span>
             <INPUT id="timer" TYPE="RANGE" MIN="1000" MAX="10000" STEP="500" onchange="timerChange();" VALUE="5000">
