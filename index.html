@@ -43,6 +43,10 @@ body {
     100% { opacity: 1}
 }
     
+#checkboxAutolist, #checkboxRandomPoryadok {
+    font-size: 150%;
+}
+    
 #buttonPrev, #buttonNext {
     font-size: 150%;
 }
@@ -527,8 +531,10 @@ async function myslider(){
     <div id="div_carnav" class="car-nav">
         <button id="buttonSkrytb" onclick="skrytb();" value=">">></button>
         <button id="buttonOtkrytb" onclick="otkrytb();" value=""><</button>
-        <p><input id="checkboxAutolist" type="checkbox" checked="checked" onclick="autolist();">авто</input></p>
-        <p><input id="checkboxRandomPoryadok" type="checkbox" checked="checked" onclick="checkboxRandomPoryadokClick();">случайная</input></p>
+        <p>
+            <input id="checkboxAutolist" type="checkbox" checked="checked" onclick="autolist();">авто</input>
+            <input id="checkboxRandomPoryadok" type="checkbox" checked="checked" onclick="checkboxRandomPoryadokClick();">случайная</input>
+        </p>
         <p>
             <button id="buttonPrev" onclick="funcPrev();" disabled>назад</button>
             <button id="buttonNext" onclick="funcNext();" disabled>вперед</button>
