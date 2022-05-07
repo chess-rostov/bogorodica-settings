@@ -145,7 +145,7 @@ var currentItem = 0;
 var timerValue = 5000;
 var flagSkrytb = false;
 var isClicked = false;
-var flagRandomPoryadok = true;
+var flagRandomPoryadok = false;
 var prevClickedItem = '';
 
 
@@ -1039,7 +1039,7 @@ async function myslider(){
         <button id="buttonOtkrytb" onclick="otkrytb();" value=""><</button>
         <p>
             <input id="checkboxAutolist" type="checkbox" checked="checked" onclick="autolist();">авто</input>
-            <input id="checkboxRandomPoryadok" type="checkbox" checked="checked" onclick="checkboxRandomPoryadokClick();">случайная</input>
+            <input id="checkboxRandomPoryadok" type="checkbox" onclick="checkboxRandomPoryadokClick();">случайная</input>
         </p>
         <p>
             <button id="buttonPrev" onclick="funcPrev();" disabled>назад</button>
